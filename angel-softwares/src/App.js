@@ -1,7 +1,14 @@
 import React from "react";
+import GlobalStyle from "./components/GlobalStyles";
+import NavigationBar from "./components/NavigationBar";
 
 const App = () => {
-  return <h1>Hello World!</h1>;
+  return (
+    <>
+      <GlobalStyle />
+      <NavigationBar />
+    </>
+  );
 };
 
 export default App;
