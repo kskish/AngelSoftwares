@@ -43,7 +43,7 @@ const Home = styled.h3`
   color: gray;
 
   @media (max-width: 600px) {
-    color: purple;
+    display: none;
   }
 `;
 

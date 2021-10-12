@@ -1,5 +1,6 @@
 import React from "react";
 import GlobalStyle from "./components/GlobalStyles";
+import ImageGrid from "./components/ImageGrid";
 import NavigationBar from "./components/NavigationBar";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <GlobalStyle />
       <NavigationBar />
+      <ImageGrid />
     </>
   );
 };
