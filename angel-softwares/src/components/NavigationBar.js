@@ -20,7 +20,7 @@ const NavigationBar = () => {
 
 //CSS - Using Styled Components
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   background-color: white;
   height: 100px;
   margin: 0;

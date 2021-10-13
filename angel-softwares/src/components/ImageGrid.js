@@ -31,14 +31,14 @@ const ImageGrid = () => {
 };
 
 const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 const FirstRow = styled.div`
-  width: 98vw;
+  width: 98%;
   height: 45%;
   margin-bottom: 5px;
   background-color: black;
@@ -57,16 +57,21 @@ const FirstRow = styled.div`
     position: absolute;
     font-size: 50px;
     color: white;
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+      left: 30px;
+    }
   }
 `;
 const SecondRow = styled.div`
-  width: 98vw;
+  width: 98%;
   height: 25%;
   display: flex;
   margin-bottom: 5px;
 `;
 const ThirdRow = styled.div`
-  width: 98vw;
+  width: 98%;
   height: 25%;
   display: flex;
 `;
