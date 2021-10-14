@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import office from "../assets/office.jpg";
 
 const Description = () => {
   return (
@@ -42,47 +41,54 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(${office});
-  background-repeat: no-repeat;
-  background-size: cover;
 `;
 
 const Method = styled.div`
-  width: 50%;
+  width: 40%;
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(220, 220, 220, 0.7);
   position: relative;
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   & h1 {
+    font-style: italic;
+    height: 10%;
   }
 
   & div {
     width: 90%;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    height: 90%;
   }
 `;
 
 const Security = styled.div`
-  width: 50%;
+  width: 40%;
   height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(68, 101, 189, 0.7);
+  border: 1px solid white;
+  border-radius: 30px;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   & h1 {
+    font-style: italic;
+    height: 10%;
   }
 
   & div {
     width: 90%;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    height: 90%;
   }
 `;
 
