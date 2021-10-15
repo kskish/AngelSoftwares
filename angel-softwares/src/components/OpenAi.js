@@ -3,6 +3,7 @@ import background from "../assets/ai.jpg";
 import openAi from "../assets/openai-logo.png";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const OpenAi = () => {
   return (
@@ -16,7 +17,12 @@ const OpenAi = () => {
           nesciunt consequatur, ut eos veritatis, fugiat dolores alias rem non
           maxime quam! Optio, illo.
         </h3>
-        <Button variant="contained">Learn more</Button>
+        <Link
+          to={"/contact_us"}
+          style={{ textDecoration: "none", color: "#aeaeae" }}
+        >
+          <Button variant="contained">Learn more</Button>
+        </Link>
       </Text>
     </Wrapper>
   );

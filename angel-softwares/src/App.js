@@ -9,19 +9,31 @@ import ImageGrid from "./components/ImageGrid";
 import NavigationBar from "./components/NavigationBar";
 import OpenAi from "./components/OpenAi";
 import OurExpertise from "./components/OurExpertise";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
+import ContactUs from "./components/ContactUs";
+import Homepage from "./components/Homepage";
 
 const App = () => {
   return (
     <>
-      <GlobalStyle />
-      <NavigationBar />
-      <ImageGrid />
-      <OurExpertise />
-      <DevImage />
-      <Description />
-      <OpenAi />
-      <Contact />
-      <Footer />
+      <Router>
+        <GlobalStyle />
+        <NavigationBar />
+        <Switch>
+          <Route path="/" exact>
+            <Homepage />
+          </Route>
+          <Route path="/contact_us" exact>
+            <ContactUs />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </>
   );
 };

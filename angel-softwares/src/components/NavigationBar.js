@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
@@ -9,10 +10,17 @@ const NavigationBar = () => {
         <h1>LOGO</h1>
       </LogoContainer>
       <Navigation>
-        <Home>Home</Home>
-        <Button variant="outlined" style={{ marginRight: "50px" }}>
-          Ask for a FREE quote
-        </Button>
+        <Link to={"/"} style={{ textDecoration: "none", color: "#aeaeae" }}>
+          <Home>Home</Home>
+        </Link>
+        <Link
+          to={"/contact_us"}
+          style={{ textDecoration: "none", color: "#aeaeae" }}
+        >
+          <Button variant="outlined" style={{ marginRight: "50px" }}>
+            Ask for a FREE quote
+          </Button>
+        </Link>
       </Navigation>
     </Wrapper>
   );
