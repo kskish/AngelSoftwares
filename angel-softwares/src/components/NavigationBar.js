@@ -2,12 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import angel_icon from "../assets/angel_icon.png";
+import angel_name from "../assets/angel_name.png";
 
 const NavigationBar = () => {
   return (
     <Wrapper>
       <LogoContainer>
-        <h1>LOGO</h1>
+        <Logo>
+          <img src={angel_icon} />
+        </Logo>
+        <Title>
+          <img src={angel_name} />
+        </Title>
       </LogoContainer>
       <Navigation>
         <Link to={"/"} style={{ textDecoration: "none", color: "#aeaeae" }}>
@@ -39,11 +46,39 @@ const Wrapper = styled.div`
 
 const LogoContainer = styled.div`
   margin-left: 20px;
+  display: flex;
+  align-items: center;
 `;
 
 const Navigation = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const Title = styled.div`
+  width: 150px;
+  height: 60px;
+  margin-left: 10px;
+  & img {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+      transition: ease-in-out;
+      transition-duration: 1s;
+      transform: translateX(20px);
+    }
+  }
+`;
+const Logo = styled.div`
+  width: 100px;
+  height: 80px;
+  margin-left: 10px;
+  & img {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const Home = styled.h3`
